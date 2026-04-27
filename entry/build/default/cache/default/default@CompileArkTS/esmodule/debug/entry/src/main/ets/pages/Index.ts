@@ -302,6 +302,7 @@ class Index extends ViewPU {
         this.__deviceHeight.set(newValue);
     }
     aboutToAppear(): void {
+        // 修复：取数组的第一个元素，而不是整个数组
         this.curSource = VideoData[0];
         this.initializeLandscapeMode();
         this.WindowSizeChange();
@@ -543,7 +544,7 @@ class Index extends ViewPU {
                 step: 1
             });
             // [Start seek_play_video]
-            Slider.width('60%');
+            Slider.width('50%');
             // [Start seek_play_video]
             Slider.trackColor({ "id": 16777232, "type": 10001, params: [], "bundleName": "com.example.PlayLongVideosBasedOnVideo", "moduleName": "entry" });
             // [Start seek_play_video]
@@ -561,6 +562,32 @@ class Index extends ViewPU {
         }, Text);
         // [End seek_play_video]
         Text.pop();
+        this.observeComponentCreation2((elmtId, isInitialRender) => {
+            // +++ 添加倍速按钮 +++
+            Column.create();
+            // +++ 添加倍速按钮 +++
+            Column.width(48);
+            // +++ 添加倍速按钮 +++
+            Column.height(24);
+            // +++ 添加倍速按钮 +++
+            Column.padding(4);
+            // +++ 添加倍速按钮 +++
+            Column.border({
+                width: 2,
+                color: Color.White,
+                radius: 12
+            });
+            // +++ 添加倍速按钮 +++
+            Column.bindMenu({ builder: this.SpeedMenu.bind(this) });
+        }, Column);
+        this.observeComponentCreation2((elmtId, isInitialRender) => {
+            Text.create(this.playbackSpeed);
+            Text.fontSize(12);
+            Text.fontColor(Color.White);
+        }, Text);
+        Text.pop();
+        // +++ 添加倍速按钮 +++
+        Column.pop();
         this.observeComponentCreation2((elmtId, isInitialRender) => {
             Image.create({ "id": 16777236, "type": 20000, params: [], "bundleName": "com.example.PlayLongVideosBasedOnVideo", "moduleName": "entry" });
             Image.width('24vp');
@@ -709,6 +736,18 @@ class Index extends ViewPU {
                     this.updateIsPlay();
                 }
             });
+            Gesture.create(GesturePriority.Low);
+            LongPressGesture.create({ repeat: true });
+            LongPressGesture.onAction(() => {
+                this.playbackSpeed = '2.0X';
+                this.curRate = PlaybackSpeed.Speed_Forward_2_00_X;
+            });
+            LongPressGesture.onActionEnd(() => {
+                this.playbackSpeed = '1.0X';
+                this.curRate = PlaybackSpeed.Speed_Forward_1_00_X;
+            });
+            LongPressGesture.pop();
+            Gesture.pop();
         }, Stack);
         this.observeComponentCreation2((elmtId, isInitialRender) => {
             // [Start previewUri_pic2]
@@ -876,7 +915,7 @@ class Index extends ViewPU {
                                 let componentCall = new VolumeView(this, {
                                     visible: this.visible,
                                     volume: this.volume,
-                                }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/pages/Index.ets", line: 463, col: 17 });
+                                }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/pages/Index.ets", line: 481, col: 17 });
                                 ViewPU.create(componentCall);
                                 let paramsLambda = () => {
                                     return {
@@ -935,7 +974,7 @@ class Index extends ViewPU {
                                     videoSrc: this.__videoSrc,
                                     isAutoPlay: this.__isAutoPlay,
                                     curSource: this.__curSource,
-                                }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/pages/Index.ets", line: 533, col: 13 });
+                                }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/pages/Index.ets", line: 563, col: 13 });
                                 ViewPU.create(componentCall);
                                 let paramsLambda = () => {
                                     return {
@@ -982,7 +1021,7 @@ class Index extends ViewPU {
                                     currentTime: this.currentTime,
                                     isPlaying: this.__isPlaying,
                                     videoController: this.videoController,
-                                }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/pages/Index.ets", line: 559, col: 9 });
+                                }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/pages/Index.ets", line: 589, col: 9 });
                                 ViewPU.create(componentCall);
                                 let paramsLambda = () => {
                                     return {

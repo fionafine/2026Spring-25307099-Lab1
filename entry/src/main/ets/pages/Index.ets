@@ -58,6 +58,7 @@ struct Index {
   @StorageLink('deviceHeight') deviceHeight: number = 0;
 
   aboutToAppear(): void {
+    // 修复：取数组的第一个元素，而不是整个数组
     this.curSource = VideoData[0];
     this.initializeLandscapeMode();
     this.WindowSizeChange();
@@ -289,8 +290,8 @@ struct Index {
         max: this.durationTime,
         step: 1
       })
-        // [StartExclude seek_play_video]
-        .width('60%')
+      // [StartExclude seek_play_video]
+        .width('50%') // 宽度调整为50%以留出空间
         .trackColor($r('app.color.slider_color'))
         // [EndExclude seek_play_video]
         .onChange((value) => {
@@ -300,6 +301,23 @@ struct Index {
       Text(FormatTime.getTimesBySecond(this.durationTime))
         .fontSize(12)
         .fontColor(Color.White)
+
+      // +++ 添加倍速按钮 +++
+      Column() {
+        Text(this.playbackSpeed)
+          .fontSize(12)
+          .fontColor(Color.White)
+      }
+      .width(48)
+      .height(24)
+      .padding(4)
+      .border({
+        width: 2,
+        color: Color.White,
+        radius: 12
+      })
+      .bindMenu(this.SpeedMenu)
+
       Image($r('app.media.fullscreen'))
         .width('24vp')
         .height('24vp')
@@ -527,6 +545,18 @@ struct Index {
               this.updateIsPlay();
             }
           })
+          // +++ 添加长按手势 +++
+          .gesture(
+            LongPressGesture({ repeat: true })
+              .onAction(() => {
+                this.playbackSpeed = '2.0X';
+                this.curRate = PlaybackSpeed.Speed_Forward_2_00_X;
+              })
+              .onActionEnd(() => {
+                this.playbackSpeed = '1.0X';
+                this.curRate = PlaybackSpeed.Speed_Forward_1_00_X;
+              })
+          )
 
           // Video list area.
           if (!this.isFullScreen) {
