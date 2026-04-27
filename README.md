@@ -33,34 +33,34 @@
 6. **【新增】非全屏模式下，播放器控制栏也支持倍速按钮，可直接点击切换倍速。**
 7. 视频播放时，通过播控中心控制视频的播放、暂停、跳转播放、播放上一个/下一个视频。
 
-markdown
-## 工程目录
-├── entry/src/main/ets
-│ ├── constants
-│ │ ├── CommonConstants.ets // 常量
-│ │ └── VideoStatus.ets // Video状态
-│ ├── controller
-│ │ └── AVSessionController.ets // AVSession控制类
-│ ├── entryability
-│ │ └── EntryAbility.ets // 程序入口
-│ ├── entrybackupability
-│ │ └── EntryBackupAbility.ets // 备份恢复类
-│ ├── module
-│ │ ├── VideoData.ets // Video数据
-│ │ └── VideoType.ets // Video类型接口
-│ ├── pages
-│ │ └── Index.ets // Video视频播放页（已修改）
-│ ├── utils
-│ │ ├── BackgroundTaskManager.ets // 后台任务管理类
-│ │ ├── FotmatTime.ets // 时间格式转换工具类
-│ │ ├── Logger.ets // 日志打印类
-│ │ └── WindowUtil.ets // 窗口类
-│ └── view
-│ ├── SmallVideo.ets // 小窗播放视频页面
-│ ├── VideoList.ets // 视频列表页面
-│ └── VolumeView.ets // 音量调节
-└── entry/src/main/resources // 应用资源目录
-## 具体实现
+工程目录
+```
+├──entry/src/main/ets
+│  ├──constants
+│  │  ├──CommonConstants.ets            // 常量
+│  │  └──VideoStatus.ets                // Video状态
+│  ├──controller
+│  │  └──AVSessionController.ets        // AVSession控制类
+│  ├──entryability
+│  │  └──EntryAbility.ets               // 程序入口
+│  ├──entrybackupability
+│  │  └──EntryBackupAbility.ets         // 备份恢复类
+│  ├──module
+│  │  ├──VideoData.ets                  // Video数据
+│  │  └──VideoType.ets                  // Video类型接口
+│  ├──pages
+│  │  └──Index.ets                      // Video视频播放页
+│  └──utils
+│  │  ├──BackgroundTaskManager.ets      // 后台任务管理类
+│  │  ├──FotmatTime.ets                 // 时间格式转换工具类
+│  │  ├──Logger.ets                     // 日志打印类
+│  │  └──WindowUtil.ets                 // 窗口类
+│  └──view
+│     ├──SmallVideo.ets                 // 小窗播放视频页面
+│     ├──VideoList.ets                  // 视频列表页面
+│     └──VolumeView.ets                 // 音量调节
+└──entry/src/main/resources             // 应用资源目录
+```
 
 ### 原有功能
 - 基于Video组件实现视频的基本播控，如：视频首帧显示、播放、暂停、循环播放、倍速播放、静音播放等功能。
