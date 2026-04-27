@@ -35,30 +35,30 @@
 
 ## 工程目录
 ├──entry/src/main/ets
-│ ├──constants
-│ │ ├──CommonConstants.ets // 常量
-│ │ └──VideoStatus.ets // Video状态
-│ ├──controller
-│ │ └──AVSessionController.ets // AVSession控制类
-│ ├──entryability
-│ │ └──EntryAbility.ets // 程序入口
-│ ├──entrybackupability
-│ │ └──EntryBackupAbility.ets // 备份恢复类
-│ ├──module
-│ │ ├──VideoData.ets // Video数据
-│ │ └──VideoType.ets // Video类型接口
-│ ├──pages
-│ │ └──Index.ets // Video视频播放页（已修改）
-│ ├──utils
-│ │ ├──BackgroundTaskManager.ets // 后台任务管理类
-│ │ ├──FotmatTime.ets // 时间格式转换工具类
-│ │ ├──Logger.ets // 日志打印类
-│ │ └──WindowUtil.ets // 窗口类
-│ └──view
-│ ├──SmallVideo.ets // 小窗播放视频页面
-│ ├──VideoList.ets // 视频列表页面
-│ └──VolumeView.ets // 音量调节
-└──entry/src/main/resources // 应用资源目录
+│  ├──constants
+│  │  ├──CommonConstants.ets            // 常量
+│  │  └──VideoStatus.ets                // Video状态
+│  ├──controller
+│  │  └──AVSessionController.ets        // AVSession控制类
+│  ├──entryability
+│  │  └──EntryAbility.ets               // 程序入口
+│  ├──entrybackupability
+│  │  └──EntryBackupAbility.ets         // 备份恢复类
+│  ├──module
+│  │  ├──VideoData.ets                  // Video数据
+│  │  └──VideoType.ets                  // Video类型接口
+│  ├──pages
+│  │  └──Index.ets                      // Video视频播放页
+│  └──utils
+│  │  ├──BackgroundTaskManager.ets      // 后台任务管理类
+│  │  ├──FotmatTime.ets                 // 时间格式转换工具类
+│  │  ├──Logger.ets                     // 日志打印类
+│  │  └──WindowUtil.ets                 // 窗口类
+│  └──view
+│     ├──SmallVideo.ets                 // 小窗播放视频页面
+│     ├──VideoList.ets                  // 视频列表页面
+│     └──VolumeView.ets                 // 音量调节
+└──entry/src/main/resources             // 应用资源目录
 
 ## 具体实现
 
