@@ -1,0 +1,12 @@
+{
+  "string": [
+    {
+      "name": "app_name",
+      "value": "PlayLongVideosBasedOnVideo"
+    },
+    {
+      "name": "reason",
+      "value": "Allow the Service Ability to run continuously in the background."
+    }
+  ]
+}

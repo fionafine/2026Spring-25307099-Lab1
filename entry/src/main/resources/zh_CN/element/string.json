@@ -1,0 +1,44 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "module description"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "video_list",
+      "value": "视频列表"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "Video长视频"
+    },
+    {
+      "name": "mountaineer",
+      "value": "Mountaineer"
+    },
+    {
+      "name": "mountaineer_desc",
+      "value": "Mountaineer本地视频"
+    },
+    {
+      "name": "rain",
+      "value": "Rain"
+    },
+    {
+      "name": "rain_desc",
+      "value": "Rain本地视频"
+    },
+    {
+      "name": "sunrise",
+      "value": "Sunrise"
+    },
+    {
+      "name": "sunrise_desc",
+      "value": "Sunrise本地视频"
+    }
+  ]
+}
