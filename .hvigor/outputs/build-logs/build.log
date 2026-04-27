@@ -1728,3 +1728,155 @@ Require stack:
 [2026-04-27T17:20:47.390] [DEBUG] debug-file - Incremental task entry:default@CacheNativeLibs pre-execution cost: 1 ms .
 [2026-04-27T17:20:47.390] [DEBUG] debug-file - entry : default@CacheNativeLibs cost memory 0.09130096435546875
 [2026-04-27T17:20:47.390] [INFO] debug-file - UP-TO-DATE :entry:default@CacheNativeLibs...  
+[2026-04-27T17:20:54.738] [WARN] debug-file - [33mWARN: [33m[33mArkTS:WARN File: D:/open/video-show-master/entry/src/main/ets/utils/BackgroundTaskManager.ets:43:9
+ The system capacity of this api 'backgroundTaskManager' is not supported on all devices
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: D:/open/video-show-master/entry/src/main/ets/utils/BackgroundTaskManager.ets:43:63
+ The system capacity of this api 'backgroundTaskManager' is not supported on all devices
+[39m[39m
+
+[2026-04-27T17:20:54.738] [DEBUG] debug-file - Ark compile task finished.finished time is 480351295311200
+[2026-04-27T17:20:54.739] [DEBUG] debug-file - worker[4] has one work done.
+[2026-04-27T17:20:54.741] [DEBUG] debug-file - default@CompileArkTS work[0] done.
+[2026-04-27T17:20:54.741] [DEBUG] debug-file - A work dispatched to worker[4] failed because unable to get work from ready queue.
+[2026-04-27T17:20:54.742] [INFO] debug-file - Finished :entry:default@CompileArkTS... after 5 s 579 ms 
+[2026-04-27T17:20:54.743] [DEBUG] debug-file - Executing task :entry:default@GeneratePkgModuleJson
+[2026-04-27T17:20:54.743] [DEBUG] debug-file - File: 'D:\open\video-show-master\entry\build\default\intermediates\preload\default\preload.json' from 'preloadSoJsonPath' is not exists, just ignore.
+[2026-04-27T17:20:54.744] [DEBUG] debug-file - Error occurs while handling @Input 'shouldDeduplicateHar': The "data" argument must be of type string or an instance of Buffer, TypedArray, or DataView. Received undefined
+[2026-04-27T17:20:54.744] [DEBUG] debug-file - Task 'entry:default@GeneratePkgModuleJson' cost while wrapping incremental declarations: 1 ms 
+[2026-04-27T17:20:54.744] [DEBUG] debug-file - Incremental task entry:default@GeneratePkgModuleJson pre-execution cost: 1 ms .
+[2026-04-27T17:20:54.744] [DEBUG] debug-file - entry : default@GeneratePkgModuleJson cost memory 0.10239410400390625
+[2026-04-27T17:20:54.745] [INFO] debug-file - UP-TO-DATE :entry:default@GeneratePkgModuleJson...  
+[2026-04-27T17:20:54.745] [DEBUG] debug-file - Executing task :entry:default@ProcessCompiledResources
+[2026-04-27T17:20:54.745] [DEBUG] debug-file - File: 'D:\open\video-show-master\entry\build\default\intermediates\preload\default\preload.json' from 'preloadSoJsonPath' is not exists, just ignore.
+[2026-04-27T17:20:54.745] [DEBUG] debug-file - Task 'entry:default@ProcessCompiledResources' cost while wrapping incremental declarations: 1 ms 
+[2026-04-27T17:20:54.746] [DEBUG] debug-file - entry : default@ProcessCompiledResources cost memory 0.056976318359375
+[2026-04-27T17:20:54.746] [DEBUG] debug-file - runTaskFromQueue task cost before running: 7 s 514 ms 
+[2026-04-27T17:20:54.746] [INFO] debug-file - Finished :entry:default@ProcessCompiledResources... after 1 ms 
+[2026-04-27T17:20:54.748] [DEBUG] debug-file - Executing task :entry:default@PackageHap
+[2026-04-27T17:20:54.753] [DEBUG] debug-file - entry:default@PackageHap is not up-to-date, since the input file 'D:\open\video-show-master\entry\build\default\intermediates\loader_out\default\ets' has been changed.
+[2026-04-27T17:20:54.753] [DEBUG] debug-file - Incremental task entry:default@PackageHap pre-execution cost: 5 ms .
+[2026-04-27T17:20:54.755] [DEBUG] debug-file - Use tool [D:\Program Files\devecostudio-windows-6.0.2.650\DevEco Studio\sdk\default\openharmony\toolchains\lib\app_packing_tool.jar]
+ [
+  'java',
+  '-Dfile.encoding=GBK',
+  '-jar',
+  'D:\\Program Files\\devecostudio-windows-6.0.2.650\\DevEco Studio\\sdk\\default\\openharmony\\toolchains\\lib\\app_packing_tool.jar',
+  '--mode',
+  'hap',
+  '--force',
+  'true',
+  '--lib-path',
+  'D:\\open\\video-show-master\\entry\\build\\default\\intermediates\\stripped_native_libs\\default',
+  '--json-path',
+  'D:\\open\\video-show-master\\entry\\build\\default\\intermediates\\package\\default\\module.json',
+  '--resources-path',
+  'D:\\open\\video-show-master\\entry\\build\\default\\intermediates\\res\\default\\resources',
+  '--index-path',
+  'D:\\open\\video-show-master\\entry\\build\\default\\intermediates\\res\\default\\resources.index',
+  '--pack-info-path',
+  'D:\\open\\video-show-master\\entry\\build\\default\\outputs\\default\\pack.info',
+  '--out-path',
+  'D:\\open\\video-show-master\\entry\\build\\default\\outputs\\default\\entry-default-unsigned.hap',
+  '--ets-path',
+  'D:\\open\\video-show-master\\entry\\build\\default\\intermediates\\loader_out\\default\\ets',
+  '--pkg-context-path',
+  'D:\\open\\video-show-master\\entry\\build\\default\\intermediates\\loader\\default\\pkgContextInfo.json'
+]
+[2026-04-27T17:20:55.056] [DEBUG] debug-file - java daemon socket received message:{"code":0,"message":"pack success"}
+[2026-04-27T17:20:55.061] [DEBUG] debug-file - entry : default@PackageHap cost memory 0.3692626953125
+[2026-04-27T17:20:55.062] [DEBUG] debug-file - runTaskFromQueue task cost before running: 7 s 830 ms 
+[2026-04-27T17:20:55.063] [INFO] debug-file - Finished :entry:default@PackageHap... after 314 ms 
+[2026-04-27T17:20:55.063] [DEBUG] debug-file - Executing task :entry:default@PackingCheck
+[2026-04-27T17:20:55.067] [DEBUG] debug-file - entry : default@PackingCheck cost memory 0.6528472900390625
+[2026-04-27T17:20:55.067] [DEBUG] debug-file - runTaskFromQueue task cost before running: 7 s 835 ms 
+[2026-04-27T17:20:55.067] [INFO] debug-file - Finished :entry:default@PackingCheck... after 4 ms 
+[2026-04-27T17:20:55.068] [DEBUG] debug-file - Executing task :entry:default@SignHap
+[2026-04-27T17:20:55.068] [WARN] debug-file - Will skip sign 'hos_hap'. No signingConfigs profile is configured in current project.
+             If needed, configure the signingConfigs in D:\open\video-show-master\build-profile.json5.
+[2026-04-27T17:20:55.068] [DEBUG] debug-file - entry:default@SignHap is not up-to-date, since the input file 'D:\open\video-show-master\entry\build\default\outputs\default\entry-default-unsigned.hap' has been changed.
+[2026-04-27T17:20:55.069] [DEBUG] debug-file - Incremental task entry:default@SignHap pre-execution cost: 1 ms .
+[2026-04-27T17:20:55.069] [DEBUG] debug-file - entry : default@SignHap cost memory -0.6860809326171875
+[2026-04-27T17:20:55.069] [DEBUG] debug-file - runTaskFromQueue task cost before running: 7 s 837 ms 
+[2026-04-27T17:20:55.069] [INFO] debug-file - Finished :entry:default@SignHap... after 2 ms 
+[2026-04-27T17:20:55.070] [DEBUG] debug-file - Executing task :entry:default@CollectDebugSymbol
+[2026-04-27T17:20:55.070] [DEBUG] debug-file - entry : default@CollectDebugSymbol cost memory 0.0828857421875
+[2026-04-27T17:20:55.070] [DEBUG] debug-file - runTaskFromQueue task cost before running: 7 s 838 ms 
+[2026-04-27T17:20:55.070] [INFO] debug-file - Finished :entry:default@CollectDebugSymbol... after 1 ms 
+[2026-04-27T17:20:55.070] [DEBUG] debug-file - Executing task :entry:assembleHap
+[2026-04-27T17:20:55.070] [DEBUG] debug-file - entry : assembleHap cost memory 0.0126800537109375
+[2026-04-27T17:20:55.070] [DEBUG] debug-file - runTaskFromQueue task cost before running: 7 s 838 ms 
+[2026-04-27T17:20:55.070] [INFO] debug-file - Finished :entry:assembleHap... after 1 ms 
+[2026-04-27T17:20:55.079] [INFO] debug-file - BUILD SUCCESSFUL in 7 s 847 ms 
+[2026-04-27T17:20:55.080] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@PreBuild is up-to-date.
+[2026-04-27T17:20:55.080] [DEBUG] debug-file - Update task entry:default@CreateModuleInfo output file:D:\open\video-show-master\entry\build\default\generated\profile\default\ModuleInfo.ts cache.
+[2026-04-27T17:20:55.080] [DEBUG] debug-file - Incremental task entry:default@CreateModuleInfo post-execution cost:1 ms .
+[2026-04-27T17:20:55.080] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@GenerateMetadata is up-to-date.
+[2026-04-27T17:20:55.080] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@MergeProfile is up-to-date.
+[2026-04-27T17:20:55.080] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@CreateBuildProfile is up-to-date.
+[2026-04-27T17:20:55.080] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@GeneratePkgContextInfo is up-to-date.
+[2026-04-27T17:20:55.080] [DEBUG] debug-file - Update task entry:default@ProcessIntegratedHsp output file:D:\open\video-show-master\build\cache\default\integrated_hsp\integratedHspCache.json cache.
+[2026-04-27T17:20:55.080] [DEBUG] debug-file - Incremental task entry:default@ProcessIntegratedHsp post-execution cost:1 ms .
+[2026-04-27T17:20:55.081] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@MakePackInfo is up-to-date.
+[2026-04-27T17:20:55.081] [DEBUG] debug-file - Update task entry:default@SyscapTransform input file:D:\Program Files\devecostudio-windows-6.0.2.650\DevEco Studio\sdk\default\openharmony\toolchains\syscap_tool.exe cache by regenerate.
+[2026-04-27T17:20:55.081] [DEBUG] debug-file - Update task entry:default@SyscapTransform input file:D:\Program Files\devecostudio-windows-6.0.2.650\DevEco Studio\sdk\default\openharmony\ets\api\device-define cache by regenerate.
+[2026-04-27T17:20:55.081] [DEBUG] debug-file - Update task entry:default@SyscapTransform output file:D:\open\video-show-master\entry\build\default\intermediates\syscap\default\rpcid.sc cache.
+[2026-04-27T17:20:55.082] [DEBUG] debug-file - Incremental task entry:default@SyscapTransform post-execution cost:2 ms .
+[2026-04-27T17:20:55.082] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@ProcessProfile is up-to-date.
+[2026-04-27T17:20:55.082] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@ProcessRouterMap is up-to-date.
+[2026-04-27T17:20:55.082] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@ProcessShareConfig is up-to-date.
+[2026-04-27T17:20:55.082] [DEBUG] debug-file - Update task entry:default@ProcessStartupConfig input file:D:\open\video-show-master\entry\build\default\intermediates\loader\default\pkgContextInfo.json cache by regenerate.
+[2026-04-27T17:20:55.082] [DEBUG] debug-file - Update task entry:default@ProcessStartupConfig output file:D:\open\video-show-master\entry\build\default\intermediates\startup\default\startup_config.json cache.
+[2026-04-27T17:20:55.082] [DEBUG] debug-file - Incremental task entry:default@ProcessStartupConfig post-execution cost:1 ms .
+[2026-04-27T17:20:55.082] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@ProcessResource is up-to-date.
+[2026-04-27T17:20:55.082] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@GenerateLoaderJson is up-to-date.
+[2026-04-27T17:20:55.082] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@ProcessLibs is up-to-date.
+[2026-04-27T17:20:55.082] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@CompileResource is up-to-date.
+[2026-04-27T17:20:55.082] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@DoNativeStrip is up-to-date.
+[2026-04-27T17:20:55.084] [DEBUG] debug-file - Update task entry:default@CompileArkTS input file:D:\open\video-show-master\entry\build\default\intermediates\loader\default cache by regenerate.
+[2026-04-27T17:20:55.084] [DEBUG] debug-file - Update task entry:default@CompileArkTS input file:D:\open\video-show-master\entry\build\default\intermediates\res\default\resources\rawfile cache by regenerate.
+[2026-04-27T17:20:55.084] [DEBUG] debug-file - Update task entry:default@CompileArkTS input file:D:\open\video-show-master\entry\build\default\intermediates\res\default\ResourceTable.txt cache by regenerate.
+[2026-04-27T17:20:55.085] [DEBUG] debug-file - Update task entry:default@CompileArkTS input file:D:\open\video-show-master\entry\build\default\intermediates\res\default\ark_module.json cache by regenerate.
+[2026-04-27T17:20:55.085] [DEBUG] debug-file - Update task entry:default@CompileArkTS input file:D:\open\video-show-master\entry\build\default\intermediates\res\default\resources\base\profile cache by regenerate.
+[2026-04-27T17:20:55.085] [DEBUG] debug-file - Update task entry:default@CompileArkTS input file:D:\open\video-show-master\entry\src\main\ets cache from map.
+[2026-04-27T17:20:55.085] [DEBUG] debug-file - Update task entry:default@CompileArkTS input file:D:\open\video-show-master\entry\build\default\intermediates\loader\default\pkgContextInfo.json cache by regenerate.
+[2026-04-27T17:20:55.085] [DEBUG] debug-file - Update task entry:default@CompileArkTS input file:D:\open\video-show-master\entry\build\default\generated\profile\default\BuildProfile.ets cache by regenerate.
+[2026-04-27T17:20:55.085] [DEBUG] debug-file - Update task entry:default@CompileArkTS output file:D:\open\video-show-master\entry\build\default\intermediates\loader_out\default\ets cache.
+[2026-04-27T17:20:55.086] [DEBUG] debug-file - Incremental task entry:default@CompileArkTS post-execution cost:4 ms .
+[2026-04-27T17:20:55.086] [DEBUG] debug-file - Update task entry:default@BuildJS input file:D:\open\video-show-master\entry\build\default\intermediates\loader\default cache by regenerate.
+[2026-04-27T17:20:55.087] [DEBUG] debug-file - Update task entry:default@BuildJS input file:D:\open\video-show-master\entry\build\default\intermediates\res\default\resources\rawfile cache by regenerate.
+[2026-04-27T17:20:55.087] [DEBUG] debug-file - Update task entry:default@BuildJS input file:D:\open\video-show-master\entry\build\default\intermediates\res\default\ResourceTable.txt cache by regenerate.
+[2026-04-27T17:20:55.087] [DEBUG] debug-file - Update task entry:default@BuildJS input file:D:\open\video-show-master\entry\build\default\intermediates\res\default\ark_module.json cache by regenerate.
+[2026-04-27T17:20:55.087] [DEBUG] debug-file - Update task entry:default@BuildJS input file:D:\open\video-show-master\entry\build\default\intermediates\res\default\resources\base\profile cache by regenerate.
+[2026-04-27T17:20:55.088] [DEBUG] debug-file - Update task entry:default@BuildJS input file:D:\open\video-show-master\entry\build\default\intermediates\loader\default\pkgContextInfo.json cache by regenerate.
+[2026-04-27T17:20:55.088] [DEBUG] debug-file - Update task entry:default@BuildJS output file:D:\open\video-show-master\entry\build\default\intermediates\loader_out\default\js cache.
+[2026-04-27T17:20:55.088] [DEBUG] debug-file - Incremental task entry:default@BuildJS post-execution cost:2 ms .
+[2026-04-27T17:20:55.088] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@CacheNativeLibs is up-to-date.
+[2026-04-27T17:20:55.088] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@GeneratePkgModuleJson is up-to-date.
+[2026-04-27T17:20:55.088] [DEBUG] debug-file - Incremental task entry:default@ProcessCompiledResources post-execution cost:1 ms .
+[2026-04-27T17:20:55.088] [DEBUG] debug-file - Update task entry:default@PackageHap input file:D:\open\video-show-master\entry\build\default\intermediates\stripped_native_libs\default cache by regenerate.
+[2026-04-27T17:20:55.088] [DEBUG] debug-file - Update task entry:default@PackageHap input file:D:\open\video-show-master\entry\build\default\intermediates\res\default\module.json cache by regenerate.
+[2026-04-27T17:20:55.089] [DEBUG] debug-file - Update task entry:default@PackageHap input file:D:\open\video-show-master\entry\build\default\intermediates\res\default\resources cache by regenerate.
+[2026-04-27T17:20:55.091] [DEBUG] debug-file - Update task entry:default@PackageHap input file:D:\open\video-show-master\entry\build\default\intermediates\res\default\resources.index cache by regenerate.
+[2026-04-27T17:20:55.091] [DEBUG] debug-file - Update task entry:default@PackageHap input file:D:\open\video-show-master\entry\build\default\outputs\default\pack.info cache by regenerate.
+[2026-04-27T17:20:55.092] [DEBUG] debug-file - Update task entry:default@PackageHap input file:D:\open\video-show-master\entry\build\default\intermediates\loader_out\default\ets cache from map.
+[2026-04-27T17:20:55.092] [DEBUG] debug-file - Update task entry:default@PackageHap input file:D:\open\video-show-master\entry\build\default\intermediates\loader\default\pkgContextInfo.json cache by regenerate.
+[2026-04-27T17:20:55.092] [DEBUG] debug-file - Update task entry:default@PackageHap input file:D:\open\video-show-master\entry\build\default\intermediates\loader_out\default\ets\sourceMaps.map cache by regenerate.
+[2026-04-27T17:20:55.092] [DEBUG] debug-file - Update task entry:default@PackageHap input file:D:\open\video-show-master\entry\build\default\generated\profile\default\BuildProfile.ets cache by regenerate.
+[2026-04-27T17:20:55.092] [DEBUG] debug-file - Update task entry:default@PackageHap output file:D:\open\video-show-master\entry\build\default\outputs\default\entry-default-unsigned.hap cache.
+[2026-04-27T17:20:55.092] [DEBUG] debug-file - Update task entry:default@PackageHap output file:D:\open\video-show-master\entry\build\default\intermediates\source_map\default\sourceMaps.map cache.
+[2026-04-27T17:20:55.092] [DEBUG] debug-file - Update task entry:default@PackageHap output file:D:\open\video-show-master\entry\build\default\outputs\default\mapping\sourceMaps.map cache.
+[2026-04-27T17:20:55.092] [DEBUG] debug-file - Incremental task entry:default@PackageHap post-execution cost:5 ms .
+[2026-04-27T17:20:55.093] [DEBUG] debug-file - Update task entry:default@SignHap input file:D:\open\video-show-master\entry\build\default\outputs\default\entry-default-unsigned.hap cache from map.
+[2026-04-27T17:20:55.093] [DEBUG] debug-file - Update task entry:default@SignHap output file:D:\open\video-show-master\entry\build\default\outputs\default\entry-default-signed.hap cache.
+[2026-04-27T17:20:55.093] [DEBUG] debug-file - Incremental task entry:default@SignHap post-execution cost:1 ms .
+[2026-04-27T17:20:55.093] [DEBUG] debug-file - Update task entry:default@CollectDebugSymbol input file:D:\open\video-show-master\entry\build\default\intermediates\loader_out\default\ets\sourceMaps.map cache by regenerate.
+[2026-04-27T17:20:55.093] [DEBUG] debug-file - Update task entry:default@CollectDebugSymbol input file:D:\open\video-show-master\entry\build\default\intermediates\libs\default cache by regenerate.
+[2026-04-27T17:20:55.093] [DEBUG] debug-file - Update task entry:default@CollectDebugSymbol output file:D:\open\video-show-master\entry\build\default\outputs\default\symbol cache.
+[2026-04-27T17:20:55.093] [DEBUG] debug-file - Incremental task entry:default@CollectDebugSymbol post-execution cost:1 ms .
+[2026-04-27T17:20:55.113] [DEBUG] debug-file - hvigor build process will be closed.
+[2026-04-27T17:20:55.113] [DEBUG] debug-file - java daemon socket close code:1000 reason:close by user
+[2026-04-27T17:20:55.116] [DEBUG] debug-file - session manager: send message to worker process.
+[2026-04-27T17:20:55.117] [DEBUG] debug-file - session manager: send message to worker process.
+[2026-04-27T17:20:55.118] [DEBUG] debug-file - watch worker: worker id should be larger than 0. Nothing will be sent to any worker thread.
+[2026-04-27T17:20:55.118] [DEBUG] debug-file - watch worker: worker id should be larger than 0. Nothing will be sent to any worker thread.
